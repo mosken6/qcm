@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div id="timer">
+            <div class="timer-box green-switch" id="minute">
+                <div class="value">01</div>
+                <div class="name">MINUTES</div>
+            </div>
+            <div class="timer-box green-switch" id="second">
+                <div class="value">30</div>
+                <div class="name">SECONDS</div>
+            </div>
+        </div>
+        <div id="question-container">
+            <div id="question"></div>
+            <div id="choices">
+            </div>
+        </div>
+        <button id="btn">Start</button>
+        <div id="btn-container">
+            <button id="next" class="green-switch">Next</button>
+            <button id="showanswer" class="green-switch">Show answer</button>
+        </div>
+        <div id="answer"></div>
+    </div>
+    <div id="groups" class="green-switch">
+        <div id="to-hide">
+            <h1>How many groups do we have?</h1>
+            <input type="number" min="2" max="10">
+        </div>
+    </div>
+    <script src="scripts/app.js"></script>
+</body>
+</html>

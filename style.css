@@ -1,0 +1,211 @@
+@font-face {
+    font-family: 'Poppins';
+    font-weight: 100;
+    src: url(fonts/Poppins/Poppins-Thin.ttf)
+}
+@font-face {
+    font-family: 'Poppins';
+    font-weight: 200;
+    src:  url(fonts/Poppins/Poppins-ExtraLight.ttf);
+}
+@font-face {
+    font-family: 'Poppins';
+    font-weight: 300;
+    src:  url(fonts/Poppins/Poppins-Light.ttf);
+}
+@font-face {
+    font-family: 'Poppins';
+    font-weight: 400;
+    src:  url(fonts/Poppins/Poppins-Regular.ttf);
+}
+@font-face {
+    font-family: 'Poppins';
+    font-weight: 500;
+    src:  url(fonts/Poppins/Poppins-Medium.ttf);
+}
+@font-face {
+    font-family: 'Poppins';
+    font-weight: 600;
+    src:  url(fonts/Poppins/Poppins-SemiBold.ttf);
+}
+@font-face {
+    font-family: 'Poppins';
+    font-weight: 700;
+    src:  url(fonts/Poppins/Poppins-Bold.ttf);
+}
+@font-face {
+    font-family: 'Poppins';
+    font-weight: 800;
+    src:  url(fonts/Poppins/Poppins-ExtraBold.ttf);
+}
+@font-face {
+    font-family: 'Poppins';
+    font-weight: 900;
+    src:  url(fonts/Poppins/Poppins-Black.ttf);
+}
+@font-face {
+    font-family: "Ubuntu Mono";
+    src: url(fonts/UbuntuMono.ttf);
+}
+* {
+    font-family: 'Poppins';
+    margin: 0;
+    padding: 0;
+}
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container {
+    position: relative;
+    left: 7vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#timer {
+    display: none;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 170px;
+    position: absolute;
+    top: 10px;
+}
+.timer-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70px;
+    height: 70px;
+    background-color: rgb(31, 129, 214);
+    color: #ffffff;
+    border: none;
+}
+.value {
+    font-family:"Ubuntu Mono";
+    font-size: 2.6em;
+}
+.name {
+    margin-top: -1px;
+    font-size: 0.8em;
+}
+
+
+#question-container {
+    display: none;
+    width: 250px;
+    height: 160px;
+}
+#question {
+    height: 50px;
+}
+
+#btn {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(31, 129, 214);
+    color: #ffffff;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 50%;
+    font-weight: 600;
+}
+#btn-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 250px;
+}
+#next{
+    display: none;
+    background-color: rgb(31, 129, 214);
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+}
+#showanswer
+{
+    display: none;
+    background-color: rgb(31, 129, 214);
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+#question-container p{
+    width: 250px;
+    text-align: center;
+}
+#answer {
+    position: absolute;
+    color: #ffffff;
+    bottom: 10px;
+    background-color: rgb(31, 214, 153);
+    width: 250px;
+    height: 40px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+#groups {
+    background-color: rgb(31, 129, 214);
+    color: #ffffff;
+    position: fixed;
+    left: 0px;
+    width: 250px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#groups h1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 20px;
+    width: 200px;
+    font-size: 1.3em;
+}
+#groups input {
+    width: 180px;
+    margin-top: 20px;
+    margin-left: 20px;
+    height: 40px;
+    border: none;
+    font-size: 1.3em;
+    padding: 0px 0px 0px 5px;
+}
+input:focus {
+    border: none;
+    outline: none;
+}
+.group-container {
+    display: flex;
+    flex-direction: row;
+}
+#groups .group {
+    background-color: black;
+    width: 180px;
+    height: 40px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-left: 10px;
+}
+.group-container button {
+    height: 40px;
+    width: 40px;
+    background-color: #ffffff;
+    border: none;
+}
+.group-score {
+    width: 80px;
+    border-bottom: white 1px solid;
+}
